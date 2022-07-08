@@ -5,7 +5,8 @@
 import * as $0 from "./routes/[name].tsx";
 import * as $1 from "./routes/api/joke.ts";
 import * as $2 from "./routes/index.tsx";
-import * as $3 from "./routes/trello/index.tsx";
+import * as $3 from "./routes/trello/components/NewBoardBtn.tsx";
+import * as $4 from "./routes/trello/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 
 const manifest = {
@@ -13,7 +14,8 @@ const manifest = {
     "./routes/[name].tsx": $0,
     "./routes/api/joke.ts": $1,
     "./routes/index.tsx": $2,
-    "./routes/trello/index.tsx": $3,
+    "./routes/trello/components/NewBoardBtn.tsx": $3,
+    "./routes/trello/index.tsx": $4,
   },
   islands: {
     "./islands/Counter.tsx": $$0,

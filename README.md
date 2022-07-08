@@ -10,6 +10,11 @@ Also see how it works with UI library and how the developer experience that this
 
 ![Fresh.js Logo](https://fresh.deno.dev/home-og.png?__frsh_c=q6f2cvd4157g)
 
+### Deployed & Demo
+
+This project deploy with the help of Deno deploy
+[Demo to project](https://www.google.com)
+
 ### Usage
 
 Start the project:

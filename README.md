@@ -1,4 +1,4 @@
-![alt text](https://ibb.co/XYVPsJz)
+![Project logo](https://i.ibb.co/QDXVNm6/mini-trello-logo.png)
 
 # This is mini trello-clone
 
@@ -8,7 +8,7 @@ Also see how it works with UI library and how the developer experience that this
 
 ## Made With Fresh
 
-![alt text](https://fresh.deno.dev/home-og.png?__frsh_c=q6f2cvd4157g)
+![Fresh.js Logo](https://fresh.deno.dev/home-og.png?__frsh_c=q6f2cvd4157g)
 
 ### Usage
 

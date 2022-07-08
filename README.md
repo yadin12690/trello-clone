@@ -13,7 +13,7 @@ Also see how it works with UI library and how the developer experience that this
 ### Deployed & Demo
 
 This project deploy with the help of Deno deploy
-[Demo to project](https://www.google.com)
+[Demo to project](https://yadin12690-trello-clone.deno.dev/)
 
 ### Usage
 

@@ -2,6 +2,9 @@
   "deno.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "tailwindCSS.includeLanguages": {
     "html": "html",
     "javascript": "javascript",

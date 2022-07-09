@@ -1,15 +1,11 @@
 /** @jsx h */
 import { tw } from "@twind";
 import { h } from "preact";
-import { useState } from 'preact/hooks';
+import { useRef, useState } from 'preact/hooks';
 import Editable from "./Editable.tsx";
 
-export interface NewTaskProps {
-    title: string;
-    content: string;
-}
-
-export default function Task(props: NewTaskProps) {
+export default function Task() {
+    const inputRef = useRef(null);
     const [task, setTask] = useState("");
 
 
@@ -21,19 +17,21 @@ export default function Task(props: NewTaskProps) {
                         text={task}
                         placeholder="Write a task name"
                         type="input"
+                        childRef={inputRef}
                     >
                         <input
                             type="text"
+                            ref={inputRef}
                             name="task"
                             placeholder="Write a task name"
                             value={task}
-                            onChange={e => setTask(e.target?.value)}
+                            onChange={e => setTask((e.target as HTMLInputElement).value)}
                         />
                     </Editable>
                 </div>
-                <p className={tw`text-gray-700 text-sm`}>
+                {/* <p className={tw`text-gray-700 text-sm`}>
                     {props.content}
-                </p>
+                </p> */}
             </div>
         </div>
     );

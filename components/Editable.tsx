@@ -1,6 +1,6 @@
 /** @jsx h */
 import { tw } from "@twind";
-import { ComponentChildren, h } from 'preact';
+import { ComponentChildren, h, RefObject } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 
 export interface EditableProps {
@@ -9,7 +9,7 @@ export interface EditableProps {
     placeholder: string,
     children: ComponentChildren,
     props?: unknown,
-    childRef?: any,
+    childRef: RefObject<HTMLInputElement>,
 }
 
 // Component accept text, placeholder values and also pass what type of Input - input, textarea so that we can use it for styling accordingly
@@ -36,12 +36,6 @@ export default function Editable(props: EditableProps) {
         }
     };
 
-    /*
-    - It will display a label is `isEditing` is false
-    - It will display the children (input or textarea) if `isEditing` is true
-    - when input `onBlur`, we will set the default non edit mode
-    Note: For simplicity purpose, I removed all the classnames, you can check the repo for CSS styles
-    */
     return (
         <section {...props}>
             {isEditing ? (
